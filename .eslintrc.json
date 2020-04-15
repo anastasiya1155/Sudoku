@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es6": true
+    "es6": true,
+    "jest/globals": true
   },
   "extends": [
     "plugin:react/recommended",
@@ -31,7 +32,8 @@
   "plugins": [
     "react",
     "@typescript-eslint",
-    "prettier"
+    "prettier",
+    "jest"
   ],
   "rules": {
     "arrow-parens": 0,
@@ -47,6 +49,7 @@
       }
     ],
     "indent": 0,
+    "no-plusplus": 0,
     "object-curly-newline": 0,
     "prettier/prettier": ["error", {
       "singleQuote": true,
