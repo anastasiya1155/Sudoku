@@ -1,23 +1,17 @@
 import React from 'react';
-import './App.css';
+import Content from './components/styles/content';
+import Title from './components/styles/title';
+import Card from './components/styles/card';
+import Grid from './components/grid';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Content>
+      <Title>Sudoku</Title>
+      <Card>
+        <Grid/>
+      </Card>
+    </Content>
   );
 }
 
