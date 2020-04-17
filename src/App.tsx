@@ -3,7 +3,7 @@ import Content from 'components/styles/content';
 import Title from 'components/styles/title';
 import Card from 'components/styles/card';
 import Grid from 'components/grid';
-import createFullGrid, { emptyGrid } from 'utils/full-grid';
+import createFullGrid from 'utils/full-grid';
 import { BLOCK_COORDS, GRID, INDEX, NUMBERS } from 'types';
 import removeNumbers from 'utils/remove-numbers';
 import copyGrid from 'utils/copy-grid';
@@ -33,6 +33,18 @@ export const GridContext = React.createContext<IGridContext>({
   handleRemoveValue: () => {},
   handleNewGame: () => {},
 });
+
+const emptyGrid: GRID = [
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+];
 
 function App() {
   const [selectedBlock, setSelectedBlock] = React.useState<null | BLOCK_COORDS>(null);

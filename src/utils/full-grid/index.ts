@@ -2,7 +2,7 @@ import { GRID } from 'types';
 import fillGrid from 'utils/fill-grid';
 import copyGrid from 'utils/copy-grid';
 
-export const emptyGrid: GRID = [
+const emptyGrid: GRID = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
