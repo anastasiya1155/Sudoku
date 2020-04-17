@@ -2,6 +2,7 @@
   "name": "sudoku",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://anastasiya1155.github.io/sudoku",
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
