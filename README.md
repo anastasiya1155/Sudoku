@@ -1,4 +1,4 @@
-#Simple sudoku game (PWA)
+##Simple sudoku game (PWA)
 
 Progressive Web App built using React, typescript and styled-components.
 
