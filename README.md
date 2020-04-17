@@ -1,5 +1,5 @@
-#Simple sudoku game
+#Simple sudoku game (PWA)
 
+Progressive Web App built using React, typescript and styled-components.
 
-### npm start
-Runs the app in the development mode
+[Demo here](https://anastasiya1155.github.io/sudoku)
