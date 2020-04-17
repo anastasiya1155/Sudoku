@@ -9,5 +9,5 @@ describe('createFullGrid', () => {
         expect(grid[row][col]).toBeLessThan(10);
       }
     }
-  })
-})
+  });
+});
