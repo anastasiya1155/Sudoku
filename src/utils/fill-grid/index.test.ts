@@ -1,19 +1,10 @@
 import { GRID } from 'types';
+import { emptyGrid } from 'utils/full-grid';
 import fillGrid from './index';
 
 describe('fillGrid', () => {
   it('fills an empty grid', () => {
-    const grid: GRID = [
-      [0, 0, 0, 0, 0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    ];
+    const grid: GRID = emptyGrid;
     fillGrid(grid);
     for (let row = 0; row < 9; row++) {
       for (let col = 0; col < 9; col++) {

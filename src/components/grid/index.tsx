@@ -7,7 +7,7 @@ import Row from './styles/row';
 import Block from './block';
 
 const Grid: React.FC = () => {
-  const { selectedBlock, handleSelectBlock } = React.useContext(GridContext);
+  const { selectedBlock, handleSelectBlock, handleFillValue, handleRemoveValue } = React.useContext(GridContext);
   const moveDown = () => {
     if (selectedBlock) {
       const rowIndex = selectedBlock[0] + 1;
@@ -45,6 +45,16 @@ const Grid: React.FC = () => {
   useMousetrap('left', moveLeft);
   useMousetrap('right', moveRight);
   useMousetrap('up', moveUp);
+  useMousetrap(['backspace', '0'], handleRemoveValue);
+  useMousetrap('1', () => handleFillValue(1));
+  useMousetrap('2', () => handleFillValue(2));
+  useMousetrap('3', () => handleFillValue(3));
+  useMousetrap('4', () => handleFillValue(4));
+  useMousetrap('5', () => handleFillValue(5));
+  useMousetrap('6', () => handleFillValue(6));
+  useMousetrap('7', () => handleFillValue(7));
+  useMousetrap('8', () => handleFillValue(8));
+  useMousetrap('9', () => handleFillValue(9));
   return (
     <Container>
       {React.Children.toArray(

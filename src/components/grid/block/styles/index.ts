@@ -2,17 +2,18 @@ import styled, { css } from 'styled-components';
 
 interface IProps {
   active?: boolean;
+  bold?: boolean;
 }
 
 export default styled.div<IProps>`
-  ${({ theme, active }) => css`
+  ${({ theme, active, bold }) => css`
     align-items: center;
     background: ${active ? theme.colors.blue : theme.colors.white};
     border: 1px solid ${theme.colors.black};
     cursor: pointer;
     display: flex;
     flex: 1 0 0;
-    font-weight: bold;
+    font-weight: ${bold ? 'bolder' : 'lighter'};
     font-size: 20px;
     height: auto;
     justify-content: center;

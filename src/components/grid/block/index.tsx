@@ -9,7 +9,9 @@ interface IProps {
 }
 
 const Block: React.FC<IProps> = ({ colIndex, rowIndex }) => {
-  const { grid, selectedBlock, handleSelectBlock } = React.useContext(GridContext);
+  const { workingGrid, selectedBlock, handleSelectBlock, challengeGrid } = React.useContext(
+    GridContext,
+  );
   const isSelected = selectedBlock
     ? selectedBlock[0] === rowIndex && selectedBlock[1] === colIndex
     : false;
@@ -18,9 +20,10 @@ const Block: React.FC<IProps> = ({ colIndex, rowIndex }) => {
       handleSelectBlock(rowIndex, colIndex);
     }
   };
+  const isOriginalValue = !!(challengeGrid && challengeGrid[rowIndex][colIndex]);
   return (
-    <Container active={isSelected} onClick={handleClick}>
-      {grid ? grid[rowIndex][colIndex] : ''}
+    <Container active={isSelected} bold={isOriginalValue} onClick={handleClick}>
+      {workingGrid ? workingGrid[rowIndex][colIndex] || '' : ''}
     </Container>
   );
 };
