@@ -89,6 +89,9 @@ function App() {
             newGrid[row][col] = value;
             setWorkingGrid(newGrid);
             saveWorkingState(newGrid);
+            if (compareArrays(newGrid, solvedGrid)) {
+              alert('Completed!');
+            }
           } else {
             alert('This value is already in this SQUARE!');
           }
@@ -97,9 +100,6 @@ function App() {
         }
       } else {
         alert('This value is already in this ROW!');
-      }
-      if (compareArrays(workingGrid, solvedGrid)) {
-        alert('Completed!');
       }
     }
   };
