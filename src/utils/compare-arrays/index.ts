@@ -1,5 +1,5 @@
 const compareArrays = (arr1: any[], arr2: any[]): boolean => {
-  if (Array.isArray(arr1) && Array.isArray(arr2)) {
+  if (!Array.isArray(arr1) && !Array.isArray(arr2)) {
     return arr1 === arr2;
   }
 
