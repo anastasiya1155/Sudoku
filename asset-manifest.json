@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/sudoku/static/js/main.f4cc4ab6.chunk.js",
-    "main.js.map": "/sudoku/static/js/main.f4cc4ab6.chunk.js.map",
+    "main.js": "/sudoku/static/js/main.4d453582.chunk.js",
+    "main.js.map": "/sudoku/static/js/main.4d453582.chunk.js.map",
     "runtime-main.js": "/sudoku/static/js/runtime-main.e0cfc196.js",
     "runtime-main.js.map": "/sudoku/static/js/runtime-main.e0cfc196.js.map",
-    "static/js/2.b3106d8d.chunk.js": "/sudoku/static/js/2.b3106d8d.chunk.js",
-    "static/js/2.b3106d8d.chunk.js.map": "/sudoku/static/js/2.b3106d8d.chunk.js.map",
+    "static/js/2.40075dea.chunk.js": "/sudoku/static/js/2.40075dea.chunk.js",
+    "static/js/2.40075dea.chunk.js.map": "/sudoku/static/js/2.40075dea.chunk.js.map",
     "index.html": "/sudoku/index.html",
-    "precache-manifest.361dfec0a9fb50793e418aa95948c64a.js": "/sudoku/precache-manifest.361dfec0a9fb50793e418aa95948c64a.js",
+    "precache-manifest.83ee28860e51c1451d6d9950ad159d3a.js": "/sudoku/precache-manifest.83ee28860e51c1451d6d9950ad159d3a.js",
     "service-worker.js": "/sudoku/service-worker.js",
-    "static/js/2.b3106d8d.chunk.js.LICENSE.txt": "/sudoku/static/js/2.b3106d8d.chunk.js.LICENSE.txt"
+    "static/js/2.40075dea.chunk.js.LICENSE.txt": "/sudoku/static/js/2.40075dea.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e0cfc196.js",
-    "static/js/2.b3106d8d.chunk.js",
-    "static/js/main.f4cc4ab6.chunk.js"
+    "static/js/2.40075dea.chunk.js",
+    "static/js/main.4d453582.chunk.js"
   ]
 }
