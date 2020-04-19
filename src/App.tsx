@@ -24,7 +24,7 @@ interface IGridContext {
   handleSelectBlock: (row: INDEX, col: INDEX) => void;
   handleFillValue: (value: NUMBERS) => void;
   handleRemoveValue: () => void;
-  handleNewGame: () => void;
+  handleNewGame: (complexity: number) => void;
 }
 
 export const GridContext = React.createContext<IGridContext>({
@@ -52,10 +52,10 @@ function App() {
   const [solvedGrid, setSolvedGrid] = React.useState<GRID>(emptyGrid);
   const [workingGrid, setWorkingGrid] = React.useState<GRID>(emptyGrid);
 
-  const handleNewGame = () => {
+  const handleNewGame = (complexity: number) => {
     const solved = createFullGrid();
     const gridCopy = copyGrid(solved);
-    const challenge = removeNumbers(gridCopy);
+    const challenge = removeNumbers(gridCopy, complexity);
     const working = copyGrid(challenge);
     setChallengeGrid(challenge);
     setSolvedGrid(solved);
@@ -70,7 +70,7 @@ function App() {
       setChallengeGrid(state.challengeGrid);
       setWorkingGrid(state.workingGrid);
     } else {
-      handleNewGame();
+      handleNewGame(5);
     }
   }, []);
 
