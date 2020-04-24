@@ -9,7 +9,7 @@ const NewButton: React.FC = () => {
 
   const handleClick = () => {
     if (window.confirm('Are you sure you want to start a new game?')) {
-      handleNewGame(parseInt(complexity, 10));
+      handleNewGame(parseInt(complexity, 10) || 5);
     }
   };
 
