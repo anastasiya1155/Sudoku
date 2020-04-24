@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/sudoku/static/js/main.ba432c90.chunk.js",
-    "main.js.map": "/sudoku/static/js/main.ba432c90.chunk.js.map",
+    "main.js": "/sudoku/static/js/main.398ce85d.chunk.js",
+    "main.js.map": "/sudoku/static/js/main.398ce85d.chunk.js.map",
     "runtime-main.js": "/sudoku/static/js/runtime-main.e0cfc196.js",
     "runtime-main.js.map": "/sudoku/static/js/runtime-main.e0cfc196.js.map",
     "static/js/2.40075dea.chunk.js": "/sudoku/static/js/2.40075dea.chunk.js",
     "static/js/2.40075dea.chunk.js.map": "/sudoku/static/js/2.40075dea.chunk.js.map",
     "index.html": "/sudoku/index.html",
-    "precache-manifest.b0eaea0ce7a660ed5fb9d82f66f559a4.js": "/sudoku/precache-manifest.b0eaea0ce7a660ed5fb9d82f66f559a4.js",
+    "precache-manifest.826951066f873ffb1fdccd1244d2eefa.js": "/sudoku/precache-manifest.826951066f873ffb1fdccd1244d2eefa.js",
     "service-worker.js": "/sudoku/service-worker.js",
     "static/js/2.40075dea.chunk.js.LICENSE.txt": "/sudoku/static/js/2.40075dea.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e0cfc196.js",
     "static/js/2.40075dea.chunk.js",
-    "static/js/main.ba432c90.chunk.js"
+    "static/js/main.398ce85d.chunk.js"
   ]
 }
