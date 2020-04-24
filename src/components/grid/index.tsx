@@ -7,13 +7,17 @@ import Row from './styles/row';
 import Block from './block';
 
 const Grid: React.FC = () => {
-  const { selectedBlock, handleSelectBlock, handleFillValue, handleRemoveValue } = React.useContext(GridContext);
+  const { selectedBlock, handleSelectBlock, handleFillValue, handleRemoveValue } = React.useContext(
+    GridContext,
+  );
   const moveDown = () => {
     if (selectedBlock) {
       const rowIndex = selectedBlock[0] + 1;
       if (rowIndex <= 8 && rowIndex !== selectedBlock[0]) {
         handleSelectBlock(rowIndex as INDEX, selectedBlock[1]);
       }
+    } else {
+      handleSelectBlock(0, 0);
     }
   };
   const moveLeft = () => {
@@ -22,6 +26,8 @@ const Grid: React.FC = () => {
       if (colIndex >= 0 && colIndex !== selectedBlock[1]) {
         handleSelectBlock(selectedBlock[0], colIndex as INDEX);
       }
+    } else {
+      handleSelectBlock(0, 8);
     }
   };
   const moveUp = () => {
@@ -30,6 +36,8 @@ const Grid: React.FC = () => {
       if (rowIndex >= 0 && rowIndex !== selectedBlock[0]) {
         handleSelectBlock(rowIndex as INDEX, selectedBlock[1]);
       }
+    } else {
+      handleSelectBlock(8, 0);
     }
   };
   const moveRight = () => {
@@ -38,6 +46,8 @@ const Grid: React.FC = () => {
       if (colIndex <= 8 && colIndex !== selectedBlock[1]) {
         handleSelectBlock(selectedBlock[0], colIndex as INDEX);
       }
+    } else {
+      handleSelectBlock(0, 0);
     }
   };
 
